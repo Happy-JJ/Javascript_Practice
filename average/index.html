@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>평균값 계산기</title>
+
+    <script>
+<!--        var value1 = prompt('Put in the #1');-->
+<!--        var value2 = prompt('put in the #2');-->
+
+<!--        var num1 = Number(value1);-->
+<!--        var num2 = Number(value2);-->
+
+<!--        var sum = num1 + num2;-->
+<!--        var average = (num1 + num2)/2;-->
+
+<!--        alert('sum = ' + sum);-->
+<!--&lt;!&ndash;        alert('sum = ' + sum + '/n' + 'avg = ' + average);&ndash;&gt;-->
+<!--        alert('avg = ' + average);-->
+
+//=====================================================================================================
+
+<!--        var sum = 0;-->
+
+<!--        for( var i = 1; i <= 10; i++) {-->
+<!--            var value = prompt('Put in the number');-->
+
+<!--            sum += Number(value);-->
+<!--        }-->
+
+<!--        var avg = sum / 10;-->
+<!--        alert('average = ' + avg);-->
+
+//=====================================================================================================
+
+<!--        // settings-->
+<!--        var sum = 0;-->
+<!--        var num = prompt('갯수를 입력해주세요');-->
+<!--        var numCount = Number(num);-->
+
+<!--        for(var i = 1; i <= numCount; i++) {-->
+<!--            var value = prompt(i + '번 숫자를 입력하세요');-->
+
+<!--            sum += Number(value);-->
+<!--        }-->
+
+<!--        var avg = sum / 10;-->
+<!--        alert('average = ' + avg);-->
+
+<!--        document.write('sum = ' + sum + '\n');-->
+<!--        document.write('average = ' + avg);-->
+
+//=========================================================================================================
+
+        // settings
+        var num = prompt('숫자를 입력해주세요');
+        var totalNumbers = Number(num);
+        var sum = 0;
+        var i = 1;
+
+        while(i <= totalNumbers) {
+            var value = prompt(i + '번째 숫자를 입력해주세요');
+            sum += Number(value);
+
+            // 루프가 돌아갈 때 마다 i값을 증가시킴
+            i++;
+        }
+
+        var avg = sum / totalNumbers;
+
+        alert('average = ' + avg);
+
+        document.write('sum = ' + sum + '\n');
+        document.write('average = ' + avg);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
